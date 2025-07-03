@@ -1,3 +1,74 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+# Cybrynt file config.
+# -------------------⟩
+
+# Configurações básicas ----⟩
+baseURL: https://example.org/ # Url padrão.
+languageCode: pt-br # Linguagem.
+theme: hextra # Tema.
+title: HydraX # Título.
+# --------------------------⟩
+
+
+# Parâmetros ---------------------------------------------⟩
+params:
+  theme:
+    default: dark # Tema padrão.
+    displayToggle: true # Mudar de tema.
+
+  navbar:
+    displayTitle: true # Título.
+    displayLogo: true # Logo.
+    logo:
+      path: images/HydraX.svg
+      dark: images/HydraX-White.svg
+      link: /
+      width: 20
+      height: 20
+
+  search:
+    enable: true # Barra de busca.
+    type: flexsearch # Tipo.
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      tokenize: forward
+# --------------------------------------------------------⟩
+
+
+# Menu -------------------------------------⟩
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
+    - name: About
+      pageRef: /about
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/imfing/hextra"
+      params:
+        icon: github
+
+  sidebar:
+    - name: More
+      params:
+        type: separator
+      weight: 1
+    - name: "About"
+      pageRef: "/about"
+      weight: 2
+    - name: "Hugo Docs ↗"
+      url: "https://gohugo.io/documentation/"
+      weight: 3
+# ------------------------------------------⟩
+
+copyright: "© 2024 YOUR TEXT HERE"
