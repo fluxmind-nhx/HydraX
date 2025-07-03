@@ -54,7 +54,7 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra"
+      url: "https://github.com/fluxmind-nhx/HydraX/"
       params:
         icon: github
 
