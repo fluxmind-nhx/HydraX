@@ -19,8 +19,8 @@ params:
     displayTitle: true # Título.
     displayLogo: true # Logo.
     logo:
-      path: images/HydraX.svg
-      dark: images/HydraX-White.svg
+      path: logos/HydraX.svg
+      dark: logos/HydraX-White.svg
       link: /
       width: 20
       height: 20
